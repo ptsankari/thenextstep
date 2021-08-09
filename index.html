@@ -4,6 +4,42 @@
 <title>school</title>
 </head>
 <style>
+
+.navbar {
+  width: 100%;
+  background-color:black;;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color:#9999ff;
+}
+
+.navbar a.active {
+  background-color:#9999ff;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
 body{
 background-image:url("editclass.jpg");
 background-repeat:no-repeat;
@@ -16,6 +52,12 @@ margin: 100px;
 </style>
 <body>
 
+<div class="navbar">
+  <a class="active" href="#">Home</a> 
+  <a href="#">Academics</a> 
+  <a href="#">Events</a> 
+  <a href="#">Student life</a>
+</div>
 
 
 </body>
